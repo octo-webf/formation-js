@@ -1,0 +1,21 @@
+
+Exercice Callback
+
+Faire un script node javascript pour récupérer un fichier, mettre le contenu dans un objet JSON ( {} ) et l'afficher sur la console.
+Ensuite enrichir l'objet avec les informations d'une API : http://swapi.co/api/people/
+  mettre la liste des nom dans un champs personnages_prefere
+
+Résultat voulu :
+{
+  nom: '',
+  prenom: '',
+  adresse: '',
+  age: '',
+  personnage_prefere: [liste des noms]
+}
+
+Rappel module à utiliser :
+  "fs" : lire le fichier avec la fonction readFile
+"request" : pour faire une requete http  (https://www.npmjs.com/package/request)
+installation : npm install request
+
