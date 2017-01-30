@@ -12,4 +12,4 @@ function isMyServerGood() {
 }
 
 
-isMyServerGood()
+isMyServerGood();

@@ -1,4 +1,4 @@
-var myFunction = function(){ console.log('myFunction'); }
+var myFunction = function(){ console.log('myFunction'); };
 console.log('typeof myFunction = ' + typeof myFunction);
 
 var myString = "myString";
