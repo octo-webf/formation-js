@@ -14,5 +14,4 @@ class Polygon {
 }
 const square = new Polygon(10, 10);
 
-console.log(square.area);
-
+console.log("Area : ", square.area);
