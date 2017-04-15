@@ -39,3 +39,8 @@ function f2({a, b}) { // es2015 named params
   console.log("es2015 named params : ", a, b);
 }
 f2(o);
+
+//3 - String interpolation
+const variable = "test";
+console.log("log variable :" + variable);
+console.log(`interpolate variable : ${variable}`);
