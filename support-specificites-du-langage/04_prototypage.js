@@ -27,7 +27,7 @@ horse.printType();
 //L'age de horse définit par le constructeur
 console.log('horse.age = ' + horse.age);
 
-//Définition d'une "instance" d'animal grace à Object.create
+//Définition d'une "instance" d'animal grâce à Object.create
 var animal = Object.create(Animal);
 console.log('animal.age = ', animal.age);
 
@@ -35,5 +35,5 @@ console.log('animal.age = ', animal.age);
 Horse.prototype.age = 30;
 console.log('horse.age = ' + horse.age);
 
-// ooops, on a redefinit 'age' pour tous les héritiers du prototype Animal
+// ooops, on a redéfini 'age' pour tous les héritiers du prototype Animal
 console.log('animal.age = ', animal.age);

@@ -21,10 +21,12 @@ function Animal() {
 
 }
 
-var animal = new Animal();
+var animal = Animal();
 animal.printAge();
+animal.increaseAge();
+animal.increaseAge();
+animal.increaseAge();
+animal.increaseAge();
 animal.increaseAge();
 animal.printAge();
 
-console.log('#global - animal.age = ' + animal.age);
-animal._privateMethod();

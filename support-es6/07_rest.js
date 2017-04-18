@@ -11,18 +11,18 @@ c = [...a,...b]; // es2015
 console.log("concat es2015 : ", c);
 
 //1.3 spread args function
-function f(a, b, c) {
+function f13(a, b, c) {
   console.log("args function : ", a,b,c);
 }
 
-f(a[0], a[1], a[2]);
-f(...a);
+f13(a[0], a[1], a[2]);
+f13(...a);
 
 //1.4 infinite args
-function f(...args) {
+function f14(...args) {
  console.log("infinite args : ", args);
 }
-f(1,2,3,4);
+f14(1,2,3,4);
 
 //2 - Named parameters
 const o = {
@@ -30,15 +30,15 @@ const o = {
   b : "b",
   c : "c"
 };
-function f1(arg) { // es5 no named params
+function f21(arg) { // es5 no named params
   console.log("es5 named params : ", arg.a, arg.b);
 }
-f1(o);
+f21(o);
 
-function f2({a, b}) { // es2015 named params
+function f22({a, b}) { // es2015 named params
   console.log("es2015 named params : ", a, b);
 }
-f2(o);
+f22(o);
 
 //3 - String interpolation
 const variable = "test";

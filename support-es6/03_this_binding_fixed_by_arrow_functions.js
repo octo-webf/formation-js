@@ -1,15 +1,12 @@
-function Personne(){
-  this.âge = 0;
+function Personne() {
+  this.age = 0;
 
-  setInterval(() => {
-    this.âge++;
-    // |this| fait bien référence
-    // à l'objet personne
-  }, 100);
+  setInterval(() => this.age++, 100);
 }
 
-var p = new Personne();
-console.log(p);
+const personne = new Personne();
+console.log(personne);
 setTimeout(function () {
-  console.log(p);
+  console.log("après un temps d'arrêt");
+  console.log(personne);
 }, 2000);

@@ -2,10 +2,10 @@ var findEntity = function (success, error) {
   return new Promise(function (resolve, reject) {
     if (success) {
       resolve(success);
-    } else {
+      } else {
       reject(error)
-    }
-  });
+      }
+    });
 };
 
 var updateEntity = function (foundEntity) {
