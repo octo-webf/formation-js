@@ -1,32 +1,11 @@
-function Animal() {
-
-  var age = 0;
-
-  function printAge() {
-    console.log('#Animal - age = ' + age);
-  }
-
-  function increaseAge() {
-    age++;
-  }
-
-  function _privateMethod() {
-    console.log('#Animal - hidden method called');
-  }
-
-  return {
-    printAge: printAge,
-    increaseAge: increaseAge
+function makeAddition(x) {
+  return function(y) {
+    return x + y;
   };
-
 }
 
-var animal = Animal();
-animal.printAge();
-animal.increaseAge();
-animal.increaseAge();
-animal.increaseAge();
-animal.increaseAge();
-animal.increaseAge();
-animal.printAge();
+var addFiveTo = makeAddition(5);
+var addTenTo = makeAddition(10);
 
+console.log(addFiveTo(5)); // 10
+console.log(addTenTo(32)); // 42
